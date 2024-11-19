@@ -16,12 +16,17 @@ O/P:  [9, -2, 5, -1, 5, -5, 0, -3, 2]
 def rearrange(arr):
     neg_array = []
     pos_array = []
+    new_array = []
 
     for element in arr:
         if element >=0:
             pos_array.append(element)
         else:
             neg_array.append(element)
+    maxi = len(pos_array) if len(pos_array) > len(neg_array) else len(neg_array)
+    
+    for i in range(maxi):
+        if len(pos_array)>i
 
 
 print(rearrange([9, 4, -2, -1, 5, 0, -5, -3, 2]))
