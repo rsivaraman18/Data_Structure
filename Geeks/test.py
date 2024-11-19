@@ -48,3 +48,50 @@ def rearrange(arr):
 print(rearrange([9, 4, -2, -1, 5, 0, -5, -3, 2]))
 print(rearrange([-5, -2, 5, 2, 4, 7, 1, 8, 0, -8]))
 print(rearrange( [9, 5, -2, -1, 5, 0, -5, -3, 2]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+Row with more Ones
+prg1:
+Input: arr[][] = [[0, 1, 1, 1],
+               [0, 0, 1, 1],
+               [1, 1, 1, 1],
+               [0, 0, 0, 0]]
+Output: 2
+Explanation: Row 2 contains 4 1's.
+"""
+
+def rowWithMax1s(arr):
+    dict = {}
+    for i in range(len(arr)):
+        array = arr[i]
+        count = 0
+        for element in array:
+            if element ==1:
+                count = count+1
+        dict[i] = count
+    print(dict)
+
+    return 'Hii'
+
+
+print(rowWithMax1s( [[0, 1, 1, 1],
+               [0, 0, 1, 1],
+               [1, 1, 1, 1],
+               [0, 0, 0, 0]]))
+
+# print(rowWithMax1s([[0, 0], 
+#                [1, 1]]))
