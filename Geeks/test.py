@@ -1,41 +1,41 @@
-
 """
-Row with more Ones
-prg1:
-Input: arr[][] = [[0, 1, 1, 1],
-               [0, 0, 1, 1],
-               [1, 1, 1, 1],
-               [0, 0, 0, 0]]
-Output: 2
-Explanation: Row 2 contains 4 1's.
+Majority Element
+
+prgm1 : 
+Input: arr[] = [3, 1, 3, 3, 2]
+Output: 3
+
+Input: arr[] = [7]
+Output: 7
+
+Input: arr[] = [2, 13]
+Output: -1
 """
 
-def rowWithMax1s(arr):
+def majorityElement(arr):
+    if len(arr) == 1:
+        return arr[0]
+
+
     d = {}
-    for i in range(len(arr)):
-        array = arr[i]
-        count = 0
-        for element in array:
-            if element ==1:
-                count = count+1
-        d[i] = count
-
+    for element in arr:
+        d[element] = d.get(element,0) + 1
     
     maxi = 0
-    row = 0
     for key,value in d.items():
-        if d[key] > maxi: 
-            maxi   = d[key] 
-            row = key
-    
-    return row
-     
+        if d[key] >maxi:
+            maxi = d[key]
+
+    if maxi != 0:
+        print('mm',maxi)
+        return maxi
+    else:
+        return -1 
+    print(d)
 
 
-print(rowWithMax1s( [[0, 1, 1, 1],
-               [0, 0, 1, 1],
-               [1, 1, 1, 1],
-               [0, 0, 0, 0]]))
 
-print(rowWithMax1s([[0, 0], 
-               [1, 1]]))
+
+print(majorityElement([3, 1, 3, 3, 2]))
+print(majorityElement( [7]))
+print(majorityElement([2, 13]))
