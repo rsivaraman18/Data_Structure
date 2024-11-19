@@ -15,12 +15,32 @@ Output: []
 Explanation: There is single element in the array. Therefore output is empty.
 """
 
+# def findDuplicates(arr):
+#     frequenncy = {}
+#     duplicates = []
+
+#     for element in arr:
+#         frequenncy[element] = frequenncy.get(element,0)+1
+    
+
+#     for key,value in frequenncy.items():
+#         if frequenncy[key] >1:
+#             duplicates.append(key)
+#     return sorted(duplicates)
+
+
+    
 def findDuplicates(arr):
-    duplicates = []
-    for element in arr:
-        if arr.count(element)>1 and element not in duplicates:
-            duplicates.append(element)
-    return duplicates
+    from collections  import Counter
+    frequency = Counter(arr)
+    print(frequency)
+
+    for key,                     in frequency:
+        print(key)
+        # if frequenncy[key] >1:
+            
+
+
 
             
         
@@ -28,8 +48,7 @@ def findDuplicates(arr):
     
 
 
-print(findDuplicates([2, 3, 1, 2, 3]) ) 
-print(findDuplicates([0, 3, 1, 2] ) ) 
-print(findDuplicates([2]) ) 
-
-3 1 0 4 2 3 1
+# print(findDuplicates([2, 3, 1, 2, 3]) ) 
+# print(findDuplicates([0, 3, 1, 2] ) ) 
+# print(findDuplicates([2]) ) 
+print(findDuplicates( [3 ,1 ,0, 4, 2, 3, 1] ) )
