@@ -4,7 +4,7 @@
 2.Pointer should not come to same position
 3.Only 1 pointer should be moved once.
 4.Left pointer should not cross the right pointer.
-5.Time Complexity is O
+5.Time Complexity is O(n).
 """
 
 print('Prg 1: ')
