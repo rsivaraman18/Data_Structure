@@ -25,10 +25,26 @@ def rearrange(arr):
             neg_array.append(element)
     maxi = len(pos_array) if len(pos_array) > len(neg_array) else len(neg_array)
     
-    for i in range(maxi):
-        if len(pos_array)>i
+    for i in range(maxi ):
+        if len(pos_array) >i:
+            new_array.append(pos_array[i])
+        if len(neg_array) >i:
+            new_array.append(neg_array[i])
+    
+    # Making changes to Original Array
+    for i in range(len(arr)):
+        arr[i] = new_array[i]
+    return arr
+
+
+
+
+
+
+
+
 
 
 print(rearrange([9, 4, -2, -1, 5, 0, -5, -3, 2]))
-# print(rearrange([-5, -2, 5, 2, 4, 7, 1, 8, 0, -8]))
-# print(rearrange( [9, 5, -2, -1, 5, 0, -5, -3, 2]))
+print(rearrange([-5, -2, 5, 2, 4, 7, 1, 8, 0, -8]))
+print(rearrange( [9, 5, -2, -1, 5, 0, -5, -3, 2]))
