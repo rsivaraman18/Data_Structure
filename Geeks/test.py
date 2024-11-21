@@ -16,3 +16,5 @@ def missingNumber(arr):
 print(missingNumber([2, -3, 4, 1, 1, 7]))
 print(missingNumber([5, 3, 2, 5, 1]))
 print(missingNumber([-8, 0, -1, -4, -3]))
+
+print(missingNumber([1 ,2, 3, 4, 5]))  ### 6
