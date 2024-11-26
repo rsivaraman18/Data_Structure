@@ -7,7 +7,7 @@ pgm2:
     Input: arr[] = [1, 1, 1]
     Output: -1
 """ 
-
+ 
 def minAnd2ndMin(arr):
 
     if len(arr) < 2:
