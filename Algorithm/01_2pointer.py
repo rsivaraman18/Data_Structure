@@ -5,7 +5,7 @@
 3.Only 1 pointer should be moved once.
 4.Left pointer should not cross the right pointer.
 5.Time Complexity is O(n).
-""" 
+"""  
   
 print('Prg 1: ')
 """ Program 1: Target = 10 , numbers = [1,2,3,4,5,6] """
