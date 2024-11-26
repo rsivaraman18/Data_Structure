@@ -1,8 +1,8 @@
 # Prg 1 : Minimum & Maximum in given array
 # Input: arr = [3, 2, 1, 56, 10000, 167]
 # Output: 1 10000
-
-
+ 
+ 
 def get_min_max( arr):
     min_index = 0
     max_index = 0
